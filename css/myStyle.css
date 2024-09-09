@@ -1,0 +1,121 @@
+/* Importar fuente */
+@import url('https://fonts.googleapis.com/css?family=EB Garamond');
+
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+}
+
+h1, h2, h3, p, span, a {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Barra de navegación */
+.navbar {
+    background-color: #270533;
+    color: #fff;
+    padding: 25px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-list li {
+    margin: 0 20px;
+}
+
+.nav-list a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+}
+
+h2 {
+    color: #f3f4f4;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 1.7em;
+}
+
+h3 {
+    color: #3f343c;
+    font-size: 22px;
+    padding: 10px 0;
+}
+
+.project-language li {
+    list-style-type: none;
+    /* Que tenga borde redondeado y fondo medio tranparente de color lila*/
+    border-radius: 40px;
+    background-color: rgba(0, 0, 0, 0.3);
+    /* Ajustar tamaño al texto */
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+    /* letra pequeña */
+    font-size: 0.8em;
+}
+
+/* Media Queries para diseño responsive */
+
+/* Teléfonos (767px o menos) */
+@media (max-width: 767px) {
+    .nav-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-list li {
+        margin: 10px 0;
+    }
+}
+
+/* Tablets (768px hasta 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .nav-list {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .nav-list li {
+        margin: 0 15px;
+    }
+}
+
+/* Laptops (1024px hasta 1439px) */
+@media (min-width: 1024px) and (max-width: 1439px) {
+    .nav-list {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .nav-list li {
+        margin: 0 20px;
+    }
+}
+
+/* Computadoras de escritorio (1440px y más) */
+@media (min-width: 1440px) {
+    .nav-list {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .nav-list li {
+        margin: 0 25px;
+    }
+}

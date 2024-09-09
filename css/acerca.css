@@ -1,0 +1,363 @@
+* {
+    box-sizing: border-box;
+}
+
+#acerca {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* height: 100vh; */
+    /* background-color: #ecf0f1; */
+    background-image: url('../img/fondo-acerca.png');
+    background-position: center;
+    background-size: cover;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+#acerca p {
+    color: #f3f4f4;
+    margin-bottom: 20px;
+    text-align: justify;
+    justify-content: space-evenly;
+    margin-left: 250px;
+    margin-right: 250px;
+}
+
+#acerca section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.container-skills {
+    width: 45%;
+    padding: 75px 90px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+    /* border-radius: 10px; */
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+}
+
+.heading1 {
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 5px;
+    margin-bottom: 50px;
+    color: #f3f4f4
+}
+
+/* Barras en linea */
+
+.bar {
+    font-size: 23px;
+    color: #f3f4f4;
+}
+
+.technical-bars {
+    margin: 40px 0;
+}
+
+.technical-bars .bar:first-child {
+    margin-top: 0;
+}
+
+.technical-bars .bar:last-child {
+    margin-bottom: 0;
+}
+
+.bar .info {
+    margin-bottom: 5px;
+}
+
+.bar .info span {
+    font-size: 17px;
+    font-weight: 500px;
+    animation: showText 0.5s 1s linear forwards;
+    color:#f3f4f4
+
+    /* opacity: 0; */
+}
+
+.progress-line {
+    position: relative;
+    border-radius: 10px;
+    width: 100%;
+    height: 5px;
+    background-color: #52530e;
+    animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+@keyframes animate {
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+.progress-line span {
+    height: 100%;
+    background-color: #e1e663;
+    position: absolute;
+    border-radius: 4px;
+    animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+.progress-line.html span {
+    width: 90%;
+}
+
+.progress-line.css span {
+    width: 80%;
+}
+
+.progress-line.python span {
+    width: 70%;
+}
+
+.progress-line.javascript span {
+    width: 60%;
+}
+
+.progress-line.cplusplus span {
+    width: 50%;
+}
+
+.progress-line span::after {
+    position: absolute;
+    padding: 1px 8px;
+    background-color: #052323;
+    color: #ecf0f1;
+    font-size: 12px;
+    border-radius: 3px;
+    top: -28px;
+    right: -20px;
+    animation: showText 0.5s 1.5s linear forwards;
+}
+
+.progress-line.html span::after {
+    content: "90%";
+}
+
+.progress-line.css span::after {
+    content: "80%";
+}
+
+.progress-line.python span::after {
+    content: "70%";
+}
+
+.progress-line.javascript span::after {
+    content: "60%";
+}
+
+.progress-line.cplusplus span::after {
+    content: "50%";
+}
+
+.progress-line span::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 7px solid transparent;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-top-color: #f3f4f4;
+    top: -10px;
+    right: 0;
+    animation: showText 0.5s 1.5s linear forwards;
+}
+
+@keyframes showText {
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/* Barras circulares */
+
+.radial-bars {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.radial-bar {
+    width: 50%;
+    height: 170px;
+    margin-bottom: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.radial-bar svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-90deg);
+    width: 120px;
+    height: 160px;
+}
+
+.progress-bar {
+    stroke-width: 10;
+    stroke: #52530e;
+    fill: transparent;
+    stroke-dasharray: 0;
+    stroke-dashoffset: 0;
+    stroke-linecap: round;
+    animation: animate-bars 1s linear forwards;
+}
+
+@keyframes animate-bar {
+    100% {
+        stroke-dashoffset: -1;
+    }
+}
+
+.path {
+    stroke-width: 10;
+    stroke: #e1e663;
+    fill: transparent;
+    stroke-dasharray:  502;
+    stroke-dashoffset: 502;
+    stroke-linecap: round;
+}
+
+.path-1{animation: animate-path1 1s 1s linear forwards;}
+.path-2{animation: animate-path2 1s 1s linear forwards;}
+.path-3{animation: animate-path3 1s 1s linear forwards;}
+.path-4{animation: animate-path4 1s 1s linear forwards;}
+
+@keyframes animate-path1 {
+    100% {
+        stroke-dashoffset: 50.2;
+    }
+}
+
+@keyframes animate-path2 {
+    100% {
+        stroke-dashoffset: 100.4;
+    }
+}
+
+@keyframes animate-path3 {
+    100% {
+        stroke-dashoffset: 150.6;
+    }
+}
+
+@keyframes animate-path4 {
+    100% {
+        stroke-dashoffset: 200.8;
+    }
+}
+
+.percentage {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 17px;
+    font-weight: 500;
+    animation: showText 0.5 1s linear forwards;
+    color : #f3f4f4;
+}
+
+.radial-bar .text {
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    bottom: -5px;
+    transform: translateX(-50%);
+    font-size: 17px;
+    font-weight: 500;
+    animation: showText 0.5s 1s linear forwards;
+    color: #f3f4f4;
+}
+
+/* Media Queries */
+
+/* Teléfonos */
+@media (max-width: 767px) {
+    .container-skills {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .radial-bar {
+        width: 100%;
+        height: 150px;
+    }
+
+    #acerca p {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+
+/* Tablets */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .container-skills {
+        width: 100%;
+        padding: 40px;
+    }
+
+    .radial-bar {
+        width: 100%;
+        height: 150px;
+    }
+
+    #acerca p {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
+
+/* Laptops */
+@media (min-width: 1024px) and (max-width: 1439px) {
+    .container-skills {
+        width: 45%;
+        padding: 60px;
+    }
+
+    .radial-bar {
+        width: 45%;
+        height: 190px;
+    }
+
+    #acerca p {
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+}
+
+/* Monitores de escritorio */
+@media (min-width: 1440px) {
+    .container-skills {
+        width: 45%;
+        padding: 75px 90px;
+    }
+
+    .radial-bar {
+        width: 45%;
+        height: 170px;
+    }
+
+    #acerca p {
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+}

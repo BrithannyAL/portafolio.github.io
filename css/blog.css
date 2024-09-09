@@ -1,0 +1,157 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap'); */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#blog {
+    line-height: 1.6;
+    color: #333;
+    /* background-color: #f0f2f5; */
+    background-image: url("../img/fondo-blog.png");
+    background-position: center;
+    background-size: cover;
+}
+
+#blog h2 {
+    color: #5d386a;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.blog-list {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.blog-post {
+    perspective: 1000px;
+}
+
+.blog-card {
+    overflow: hidden;
+    transition: all 0.5s ease;
+    transform-style: preserve-3d;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+
+.blog-post:hover .blog-card {
+    transform: rotateY(12deg) scale(1.05);
+}
+
+.blog-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.blog-image {
+    position: relative;
+    overflow: hidden;
+}
+
+.blog-image img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.blog-post:hover .blog-image img {
+    transform: scale(1.1);
+}
+
+.blog-image::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent);
+}
+
+.blog-category {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #333;
+    padding: 0.25rem 0.75rem;
+    border-radius: 1rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    z-index: 10;
+}
+
+.blog-text {
+    padding: 1.5rem;
+}
+
+.blog-excerpt {
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.read-more {
+    align-self: flex-start;
+    background-color: transparent;
+    border: 2px solid #6b46c1;
+    color: #6b46c1;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.read-more:hover {
+    background-color: #6b46c1;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+.blog-shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to right, #6b46c1, #d53f8c);
+    border-radius: 0.5rem;
+    opacity: 0;
+    transition: all 0.5s ease;
+    z-index: -1;
+    transform: translateZ(-50px) rotateY(12deg) scale(0.9);
+}
+
+.blog-post:hover .blog-shadow {
+    opacity: 0.2;
+    filter: blur(10px);
+}
+
+@media (min-width: 768px) {
+    .blog-content {
+        flex-direction: row;
+    }
+
+    .blog-image {
+        width: 40%;
+    }
+
+    .blog-image img {
+        height: 100%;
+    }
+
+    .blog-text {
+        width: 60%;
+    }
+}

@@ -1,0 +1,135 @@
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    /* Imagen de fondo */
+    background-image: url('../img/fondo-hero.png');
+    background-size: cover;
+    background-position: center;
+    /* background-color: #8A9FBD; */
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    gap: 40px; /* Aumenta el espacio entre la imagen y el texto */
+}
+
+.hero-image {
+    width: 250px;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-left: 20px; /* Mueve la imagen ligeramente hacia el centro */
+}
+
+.hero-text {
+    max-width: 600px;
+}
+
+.hero-text h1 {
+    font-size: 2.5em;
+    color: #270533;
+    margin-bottom: 10px;
+}
+
+.hero-text p {
+    font-size: 1.2em;
+    color: #270533;
+    margin-bottom: 10px;
+}
+
+/* Media Queries para diseño responsive */
+
+/* Tablets (768px hasta 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-image {
+        margin-left: 0;
+        margin-bottom: 20px;
+        width: 300px;
+    }
+
+    .hero-text h1 {
+        font-size: 2em;
+    }
+
+    .hero-text p {
+        font-size: 1em;
+    }
+}
+
+/* Laptops (1024px hasta 1439px) */
+@media (min-width: 1024px) and (max-width: 1439px) {
+    .hero-content {
+        flex-direction: row;
+        text-align: left;
+    }
+
+    .hero-image {
+        margin-left: 20px;
+        width: 300px;
+    }
+
+    .hero-text h1 {
+        font-size: 2.2em;
+    }
+
+    .hero-text p {
+        font-size: 1.1em;
+    }
+}
+
+/* Computadoras de escritorio (1440px y más) */
+@media (min-width: 1440px) {
+    .hero-content {
+        flex-direction: row;
+        text-align: left;
+    }
+
+    .hero-image {
+        margin-left: 20px;
+        width: 350px;
+    }
+
+    .hero-text h1 {
+        font-size: 2.5em;
+    }
+
+    .hero-text p {
+        font-size: 1.2em;
+    }
+}
+
+/* Media Queries para teléfonos celulares (767px o menos) */
+@media (max-width: 767px) {
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-image {
+        margin-left: 0;
+        margin-bottom: 20px;
+        width: 200px;
+    }
+
+    .hero-text {
+        max-width: 100%;
+    }
+
+    .hero-text h1 {
+        font-size: 2em;
+    }
+
+    .hero-text p {
+        font-size: 1em;
+    }
+}

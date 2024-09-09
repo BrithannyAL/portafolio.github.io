@@ -1,0 +1,100 @@
+/* Sección Portafolio de Proyectos */
+#portafolio {
+    padding: 40px 9%;
+    padding-bottom: 100px;
+    box-sizing: border-box;
+    /* height: 100vh; */
+    /* background-color: #4d695e; */
+    background-image: url('../img/fondo-portafolio.png');
+    background-position: center;
+    background-size: cover;
+}
+
+#portafolio h2 {
+    color: #5d386a;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    transition: .2s linear;
+}
+
+.contenedor-proyectos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 15px;
+}
+
+.proyecto {
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    background-color: #ffffff;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.proyecto img {
+    height: 150px;
+}
+
+.proyecto p {
+    color: #777;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.proyecto a {
+    margin-top: 10px;
+    display: inline-block;
+    background-color: #8c5e9d;
+    color: white;
+    font-size: 17px;
+    border-radius: 5px;
+    padding: 8px 15px;
+    text-decoration: none;
+}
+
+.proyecto a:hover {
+    letter-spacing: 1px;
+}
+
+.proyecto:hover {
+    box-shadow: 0 10px 15px rgba(0,0,0,0.3);
+    transform: scale(1.02);
+}
+
+#my-cv {
+    display: inline-block;
+    margin: 20px auto;
+    margin-top: 60px;
+    padding: 10px 20px;
+    background-color: #8c5e9d; /* Color de fondo */
+    color: white; /* Color del texto */
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* Sombra */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transiciones */
+}
+
+#my-cv:hover {
+    background-color: #734a7d; /* Color de fondo al pasar el ratón */
+    transform: scale(1.05); /* Efecto de escala al pasar el ratón */
+}
+
+#my-cv:active {
+    background-color: #5a365d; /* Color de fondo al hacer clic */
+    transform: scale(1); /* Efecto de escala al hacer clic */
+}
+
+@media screen and (max-width: 768px) {
+    #portafolio {
+        padding: 20px;
+    }
+}

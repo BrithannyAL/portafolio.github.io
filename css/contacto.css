@@ -1,0 +1,70 @@
+#contacto {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 70px;
+    /* min-height: 100vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../img/fondo-contacto.png");
+    background-size: cover;
+    background-position: center;
+}
+.card {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    overflow: hidden;
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-info {
+    padding: 2rem;
+    flex: 1;
+}
+.map-container {
+    flex: 1;
+    min-height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+#contacto h2 {
+    color: #5d386a;
+}
+.info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    color: #666;
+}
+.info-item svg {
+    width: 24px;
+    height: 24px;
+    margin-right: 1rem;
+    fill: #667eea;
+}
+.info-item a {
+    color: #667eea;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+.info-item a:hover {
+    color: #764ba2;
+}
+iframe {
+    width: 85%;
+    height: 85%;
+    border: 3px solid #ddd;
+    border-radius: 5px;
+}
+
+@media (min-width: 768px) {
+    .card {
+        flex-direction: row;
+    }
+}

@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Personal</title>
+    <link rel="stylesheet" href="../css/myStyle.css">
+    <link rel="stylesheet" href="../css/hero.css">
+    <link rel="stylesheet" href="../css/portafolio.css">
+    <link rel="stylesheet" href="../css/acerca.css">
+    <link rel="stylesheet" href="../css/blog.css">
+    <link rel="stylesheet" href="../css/contacto.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <!-- Barra de navegación -->
+    <nav class="navbar">
+        <ul class="nav-list">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#portafolio">Portafolio de Proyectos</a></li>
+            <li><a href="#acerca">Acerca de Mí</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- Sección Inicio -->
+    <section id="inicio" class="hero-section">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Brithanny Arguello Lara</h1>
+                <p>Ingeniera en Computación</p>
+                <p>Estudiante del Instituto Tecnológico de Costa Rica en el sexto semestre de Ingeniería en Computación.
+                    Autodidacta, organizada y adaptable, con habilidad para la comunicación y relaciones
+                    interpersonales. Busco expandir mis conocimientos en áreas de desarrollo web y backend.</p>
+            </div>
+            <img src="../img/portada.png" alt="Fotografía personal" class="hero-image">
+        </div>
+    </section>
+    <!-- Sección Portafolio de Proyectos -->
+    <section id="portafolio">
+        <h2>Portafolio de Proyectos</h2>
+        <div class="contenedor-proyectos">
+            <!-- Proyecto 1 -->
+            <div class="proyecto">
+                <img src="../img/First-UnityProject.png" alt="Proyecto 1">
+                <h3>First-UnityProject</h3>
+                <p>Mi primer proyecto de realidad aumentada en Unity. Un minijuego sencillo con 3 niveles, un contador de puntos, un objetivo y un enemigo con IA que va tras el jugador.</p>
+                <ul class="project-language">
+                    <li>C#</li>
+                </ul>
+                <a href="https://github.com/BrithannyAL/First-UnityProject.git">Ver Proyecto</a>
+            </div>
+            <!-- Proyecto 2 -->
+            <div class="proyecto">
+                <img src="../img/biblio-web.png" alt="Proyecto 2">
+                <h3>Biblio web</h3>
+                <p>Página web que permite hacer consultas sobre el nombre, autor, fecha de publicación entre otros datos a una API de libros. Posee un buscador con filtros, además de una sección de recomendaciones.</p>
+                <ul class="project-language">
+                    <li>React, HTML, CSS</li>
+                </ul>
+                <a href="https://github.com/BrithannyAL/biblio-web.git">Ver Proyecto</a>
+            </div>
+            <!-- Proyecto 2 -->
+            <div class="proyecto">
+                <img src="../img/school-app.png" alt="Proyecto 3">
+                <h3>School app</h3>
+                <p>Aplicación educativa para gestionar grupos, profesores y tareas, con servicio de mensajería entre docentes y tutores, y apartados de tareas asignadas a los estudiantes.</p>
+                <ul class="project-language">
+                    <li>Python</li>
+                </ul>
+                <a href="https://github.com/BrithannyAL/school-app.git">Ver Proyecto</a>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Sección Acerca de Mí -->
+    <section id="acerca">
+        <h2>Acerca de Mí</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia suscipit sequi, quis obcaecati aperiam sunt
+            odio fuga eos earum facere accusantium, dolorum similique quibusdam expedita perspiciatis aliquid
+            praesentium. Eum, expedita.</p>
+
+        <section>
+            <div class="container-skills" id="skills">
+                <h3 class="heading1">Aptitudes Técnicas</h3>
+
+                <div class="technical-bars">
+
+                    <div class="bar"><i class='bx bxl-html5'></i>
+                        <div class="info">
+                            <span>HTML</span>
+                        </div>
+                        <div class="progress-line html">
+                            <span></span>
+                        </div>
+                    </div>
+
+                    <div class="bar"><i class='bx bxl-css3'></i>
+                        <div class="info">
+                            <span>CSS</span>
+                        </div>
+                        <div class="progress-line css">
+                            <span></span>
+                        </div>
+                    </div>
+
+                    <div class="bar"><i class='bx bxl-python'></i>
+                        <div class="info">
+                            <span>PYTHON</span>
+                        </div>
+                        <div class="progress-line python">
+                            <span></span>
+                        </div>
+                    </div>
+
+                    <div class="bar"><i class='bx bxl-javascript'></i>
+                        <div class="info">
+                            <span>JAVASCRIPT</span>
+                        </div>
+                        <div class="progress-line javascript">
+                            <span></span>
+                        </div>
+                    </div>
+
+                    <div class="bar"><i class='bx bxl-c-plus-plus'></i>
+                        <div class="info">
+                            <span>C++</span>
+                        </div>
+                        <div class="progress-line cplusplus">
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-skills">
+                <h3 class="heading1">Aptitudes personales</h3>
+                <div class="radial-bars">
+
+                    <div class="radial-bar">
+                        <svg x="0px" y="0px" viewBox="0 0 200 200">
+                            <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                            <circle class="path path-1" cx="100" cy="100" r="80"></circle>
+                        </svg>
+                        <div class="percentage">90%</div>
+                        <div class="text">Creatividad</div>
+                    </div>
+                    <div class="radial-bar">
+                        <svg x="0px" y="0px" viewBox="0 0 200 200">
+                            <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                            <circle class="path path-2" cx="100" cy="100" r="80"></circle>
+                        </svg>
+                        <div class="percentage">90%</div>
+                        <div class="text">Gestión del tiempo</div>
+                    </div>
+                    <div class="radial-bar">
+                        <svg x="0px" y="0px" viewBox="0 0 200 200">
+                            <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                            <circle class="path path-3" cx="100" cy="100" r="80"></circle>
+                        </svg>
+                        <div class="percentage">90%</div>
+                        <div class="text">Resposabilidad afectiva</div>
+                    </div>
+                    <div class="radial-bar">
+                        <svg x="0px" y="0px" viewBox="0 0 200 200">
+                            <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                            <circle class="path path-4" cx="100" cy="100" r="80"></circle>
+                        </svg>
+                        <div class="percentage">100%</div>
+                        <div class="text">Comunicación</div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Agregar más aptitudes sociales aquí -->
+        <a id="my-cv" href="cv.pdf" download>Descargar CV</a>
+
+    </section>
+
+    <!-- Sección Blog -->
+    <section id="blog">
+        <div class="container">
+            <h2>Blog</h2>
+            <div class="blog-list">
+
+                <article class="blog-post">
+                    <div class="blog-card">
+                        <div class="blog-content">
+                            <div class="blog-image">
+                                <img src="/placeholder.svg?height=300&width=400&text=Post+1" alt="Imagen del blog 1">
+                                <span class="blog-category">Diseño</span>
+                            </div>
+                            <div class="blog-text">
+                                <h3>El Arte del Diseño Minimalista</h3>
+                                <p class="blog-excerpt">Descubre cómo el minimalismo puede transformar tus proyectos de
+                                    diseño y crear un impacto duradero en tu audiencia.</p>
+                                <a href="#" class="read-more">Leer más</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-shadow"></div>
+                </article>
+
+                <article class="blog-post">
+                    <div class="blog-card">
+                        <div class="blog-content">
+                            <div class="blog-image">
+                                <img src="/placeholder.svg?height=300&width=400&text=Post+2" alt="Imagen del blog 2">
+                                <span class="blog-category">Tecnología</span>
+                            </div>
+                            <div class="blog-text">
+                                <h3>El Futuro de la Inteligencia Artificial</h3>
+                                <p class="blog-excerpt">Explora las últimas tendencias en IA y cómo están moldeando el
+                                    futuro de la tecnología y nuestras vidas cotidianas.</p>
+                                <a href="#" class="read-more">Leer más</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-shadow"></div>
+                </article>
+
+                <article class="blog-post">
+                    <div class="blog-card">
+                        <div class="blog-content">
+                            <div class="blog-image">
+                                <img src="/placeholder.svg?height=300&width=400&text=Post+3" alt="Imagen del blog 3">
+                                <span class="blog-category">Lifestyle</span>
+                            </div>
+                            <div class="blog-text">
+                                <h3>Viviendo una Vida Más Sostenible</h3>
+                                <p class="blog-excerpt">Consejos prácticos y ideas innovadoras para adoptar un estilo de
+                                    vida más ecológico y sostenible en el mundo moderno.</p>
+                                <a href="#" class="read-more">Leer más</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-shadow"></div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section id="contacto">
+        <div class="card">
+            <div class="contact-info">
+                <h2>Contacto</h2>
+                <div class="info-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z">
+                        </path>
+                    </svg>
+                    <span>+34 123 456 789</span>
+                </div>
+                <div class="info-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z">
+                        </path>
+                    </svg>
+                    <a href="mailto:tucorreo@ejemplo.com">tucorreo@ejemplo.com</a>
+                </div>
+                <div class="info-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z">
+                        </path>
+                    </svg>
+                    <a href="https://github.com/tuusuario" target="_blank"
+                        rel="noopener noreferrer">github.com/tuusuario</a>
+                </div>
+                <div class="info-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z">
+                        </path>
+                    </svg>
+                    <span>Madrid, España</span>
+                </div>
+                <div class="info-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-6 0h-4V4h4v2z">
+                        </path>
+                    </svg>
+                    <span>Remoto / Europa / América</span>
+                </div>
+            </div>
+            <div class="map-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15685.693671986803!2d-84.53904400534455!3d10.624177032246006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f0a9e83bcb9a2db%3A0x3cf274aacd5f727!2sProvincia%20de%20Alajuela%2C%20Santa%20Rosa%20de%20Pocosol!5e0!3m2!1ses-419!2scr!4v1725890992985!5m2!1ses-419!2scr"
+                    allowfullscreen="" loading="lazy" title="Mapa de ubicación"></iframe>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
