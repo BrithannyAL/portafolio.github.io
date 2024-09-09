@@ -108,23 +108,23 @@
 }
 
 .progress-line.html span {
-    width: 90%;
-}
-
-.progress-line.css span {
-    width: 80%;
-}
-
-.progress-line.python span {
     width: 70%;
 }
 
-.progress-line.javascript span {
-    width: 60%;
+.progress-line.css span {
+    width: 70%;
 }
 
-.progress-line.cplusplus span {
-    width: 50%;
+.progress-line.python span {
+    width: 85%;
+}
+
+.progress-line.javascript span {
+    width: 75%;
+}
+
+.progress-line.golang span {
+    width: 75%;
 }
 
 .progress-line span::after {
@@ -140,23 +140,23 @@
 }
 
 .progress-line.html span::after {
-    content: "90%";
-}
-
-.progress-line.css span::after {
-    content: "80%";
-}
-
-.progress-line.python span::after {
     content: "70%";
 }
 
-.progress-line.javascript span::after {
-    content: "60%";
+.progress-line.css span::after {
+    content: "70%";
 }
 
-.progress-line.cplusplus span::after {
-    content: "50%";
+.progress-line.python span::after {
+    content: "85%";
+}
+
+.progress-line.javascript span::after {
+    content: "75%";
+}
+
+.progress-line.golang span::after {
+    content: "75%";
 }
 
 .progress-line span::before {
