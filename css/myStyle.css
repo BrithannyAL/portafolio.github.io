@@ -1,7 +1,5 @@
-/* Importar fuente */
 @import url('https://fonts.googleapis.com/css?family=EB Garamond');
 
-/* Estilos generales */
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
@@ -55,19 +53,6 @@ h3 {
     color: #3f343c;
     font-size: 22px;
     padding: 10px 0;
-}
-
-.project-language li {
-    list-style-type: none;
-    /* Que tenga borde redondeado y fondo medio tranparente de color lila*/
-    border-radius: 40px;
-    background-color: rgba(0, 0, 0, 0.3);
-    /* Ajustar tamaño al texto */
-    display: inline-block;
-    padding-left: 10px;
-    padding-right: 10px;
-    /* letra pequeña */
-    font-size: 0.8em;
 }
 
 /* Media Queries para diseño responsive */
