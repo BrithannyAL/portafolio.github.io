@@ -11,7 +11,7 @@
     background-position: center;
 }
 .card {
-    background-color: white;
+    background-color: rgba(0, 0, 0, 0.4);
     border-radius: 5px;
     box-shadow: 0 5px 10px rgba(0,0,0,0.2);
     overflow: hidden;
@@ -34,27 +34,27 @@
     margin-right: 10px;
 }
 #contacto h2 {
-    color: #5d386a;
+    color: #ffffff;
 }
 .info-item {
     display: flex;
     align-items: center;
     margin-bottom: 1rem;
-    color: #666;
+    color: #ffffff;
 }
 .info-item svg {
     width: 24px;
     height: 24px;
     margin-right: 1rem;
-    fill: #667eea;
+    fill: #e6bfb1;
 }
 .info-item a {
-    color: #667eea;
+    color: #e6bfb1;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 .info-item a:hover {
-    color: #764ba2;
+    color: #e89f85;
 }
 iframe {
     width: 85%;

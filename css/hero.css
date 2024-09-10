@@ -3,11 +3,9 @@
     align-items: center;
     justify-content: center;
     height: 100vh;
-    /* Imagen de fondo */
     background-image: url('../img/fondo-hero.png');
     background-size: cover;
     background-position: center;
-    /* background-color: #8A9FBD; */
     padding: 0 20px;
     box-sizing: border-box;
 }
