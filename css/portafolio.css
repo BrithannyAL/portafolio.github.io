@@ -3,8 +3,6 @@
     padding: 40px 9%;
     padding-bottom: 100px;
     box-sizing: border-box;
-    /* height: 100vh; */
-    /* background-color: #4d695e; */
     background-image: url('../img/fondo-portafolio.png');
     background-position: center;
     background-size: cover;
@@ -77,30 +75,15 @@
     font-size: 0.8em;
 }
 
-#my-cv {
-    display: inline-block;
-    margin: 20px auto;
-    margin-top: 60px;
-    padding: 10px 20px;
-    background-color: #8c5e9d; /* Color de fondo */
-    color: white; /* Color del texto */
-    font-size: 18px;
-    font-weight: bold;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 5px; /* Bordes redondeados */
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* Sombra */
-    transition: background-color 0.3s ease, transform 0.3s ease; /* Transiciones */
-}
 
 #my-cv:hover {
-    background-color: #734a7d; /* Color de fondo al pasar el ratón */
-    transform: scale(1.05); /* Efecto de escala al pasar el ratón */
+    background-color: #734a7d; 
+    transform: scale(1.05);
 }
 
 #my-cv:active {
-    background-color: #5a365d; /* Color de fondo al hacer clic */
-    transform: scale(1); /* Efecto de escala al hacer clic */
+    background-color: #5a365d;
+    transform: scale(1);
 }
 
 @media screen and (max-width: 768px) {

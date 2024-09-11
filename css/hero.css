@@ -13,7 +13,7 @@
 .hero-content {
     display: flex;
     align-items: center;
-    gap: 40px; /* Aumenta el espacio entre la imagen y el texto */
+    gap: 40px;
 }
 
 .hero-image {
@@ -21,7 +21,7 @@
     height: auto;
     border-radius: 50%;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-left: 20px; /* Mueve la imagen ligeramente hacia el centro */
+    margin-left: 20px;
 }
 
 .hero-text {
