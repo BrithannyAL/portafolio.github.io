@@ -102,15 +102,15 @@
 }
 
 .progress-line.html span {
-    width: 70%;
+    width: 50%;
 }
 
 .progress-line.css span {
-    width: 70%;
+    width: 50%;
 }
 
 .progress-line.python span {
-    width: 85%;
+    width: 100%;
 }
 
 .progress-line.javascript span {
@@ -118,7 +118,7 @@
 }
 
 .progress-line.golang span {
-    width: 75%;
+    width: 100%;
 }
 
 .progress-line span::after {
@@ -126,7 +126,7 @@
     padding: 1px 8px;
     background-color: #052323;
     color: #ecf0f1;
-    font-size: 12px;
+    font-size: 15px;
     border-radius: 3px;
     top: -28px;
     right: -20px;
@@ -134,23 +134,23 @@
 }
 
 .progress-line.html span::after {
-    content: "70%";
+    content: "Intermedio";
 }
 
 .progress-line.css span::after {
-    content: "70%";
+    content: "Intermedio";
 }
 
 .progress-line.python span::after {
-    content: "85%";
+    content: "Experto";
 }
 
 .progress-line.javascript span::after {
-    content: "75%";
+    content: "Avanzado";
 }
 
 .progress-line.golang span::after {
-    content: "75%";
+    content: "Experto";
 }
 
 .progress-line span::before {
@@ -236,25 +236,25 @@
 
 @keyframes animate-path1 {
     100% {
-        stroke-dashoffset: 25.1;
+        stroke-dashoffset: 0;
     }
 }
 
 @keyframes animate-path2 {
     100% {
-        stroke-dashoffset: 75.3;
+        stroke-dashoffset: 125.5;
     }
 }
 
 @keyframes animate-path3 {
     100% {
-        stroke-dashoffset: 50.2;
+        stroke-dashoffset: 0;
     }
 }
 
 @keyframes animate-path4 {
     100% {
-        stroke-dashoffset: 75.1;
+        stroke-dashoffset: 125.5;
     }
 }
 
