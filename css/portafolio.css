@@ -86,8 +86,14 @@
     transform: scale(1);
 }
 
+/* Medida para celular */
+
 @media screen and (max-width: 768px) {
     #portafolio {
         padding: 20px;
+    }
+
+    .contenedor-proyectos {
+        grid-template-columns: 1fr; /* Display projects in a single column */
     }
 }

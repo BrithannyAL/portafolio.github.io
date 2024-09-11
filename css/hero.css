@@ -54,35 +54,6 @@
     margin-bottom: 10px;
 }
 
-/* Media Queries para diseño responsive */
-
-/* Tablets (768px hasta 1023px) */
-@media (min-width: 768px) and (max-width: 1023px) {
-    .hero-content {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .hero-image {
-        margin-left: 0;
-        margin-bottom: 20px;
-        width: 300px;
-    }
-}
-
-/* Laptops (1024px hasta 1439px) */
-@media (min-width: 1024px) and (max-width: 1439px) {
-    .hero-content {
-        flex-direction: row;
-        text-align: left;
-    }
-
-    .hero-image {
-        margin-left: 20px;
-        width: 400px;
-    }
-}
-
 /* Media Queries para teléfonos celulares (767px o menos) */
 @media (max-width: 767px) {
     .hero-content {
@@ -93,10 +64,14 @@
     .hero-image {
         margin-left: 0;
         margin-bottom: 20px;
-        width: 200px;
+        width: 300px;
     }
 
     .hero-text {
         max-width: 100%;
+    }
+
+    .hero-text h1 {
+        text-align: center;
     }
 }
