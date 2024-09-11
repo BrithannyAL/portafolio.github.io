@@ -141,14 +141,10 @@
     }
 
     .blog-image {
-        width: 40%;
+        width: 35%;
     }
 
     .blog-image img {
         height: 100%;
-    }
-
-    .blog-text {
-        width: 60%;
     }
 }

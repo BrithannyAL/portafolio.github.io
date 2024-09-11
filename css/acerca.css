@@ -16,10 +16,11 @@
 #acerca p {
     color: #f3f4f4;
     margin-bottom: 20px;
-    text-align: justify;
+    text-align: center;
     justify-content: space-evenly;
     margin-left: 250px;
     margin-right: 250px;
+    font-size: 20px;
 }
 
 #acerca section {
