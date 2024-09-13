@@ -347,6 +347,8 @@
         width: 100%;
         padding: 20px;
         margin-bottom: 20px;
+        margin-left: 30px;
+        margin-right: 30px;
     }
 
     .radial-bar {
@@ -357,5 +359,10 @@
     #acerca p {
         margin-left: 5%;
         margin-right: 5%;
+    }
+
+    .visor-cv {
+        margin-left: 70px;
+        margin-right: 70px;
     }
 }

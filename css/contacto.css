@@ -66,4 +66,10 @@ iframe {
     .card {
         flex-direction: row;
     }
+
+    .contact-info {
+        margin-bottom: 10px;
+    }
+
+    
 }

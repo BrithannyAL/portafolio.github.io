@@ -152,42 +152,7 @@ h3 {
     }
 
     .nav-list li {
-        margin: 10px 0;
-    }
-}
-
-/* Tablets (768px hasta 1023px) */
-@media (min-width: 768px) and (max-width: 1023px) {
-    .nav-list {
-        flex-direction: row;
-        justify-content: space-evenly;
-    }
-
-    .nav-list li {
-        margin: 0 15px;
-    }
-}
-
-/* Laptops (1024px hasta 1439px) */
-@media (min-width: 1024px) and (max-width: 1439px) {
-    .nav-list {
-        flex-direction: row;
-        justify-content: center;
-    }
-
-    .nav-list li {
-        margin: 0 20px;
-    }
-}
-
-/* Computadoras de escritorio (1440px y más) */
-@media (min-width: 1440px) {
-    .nav-list {
-        flex-direction: row;
-        justify-content: center;
-    }
-
-    .nav-list li {
-        margin: 0 25px;
+        margin: 5px 0;
+        font-size: 12px;
     }
 }

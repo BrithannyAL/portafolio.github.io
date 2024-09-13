@@ -63,8 +63,12 @@
     margin-bottom: 10px;
 }
 
-/* Media Queries para teléfonos celulares (767px o menos) */
 @media (max-width: 767px) {
+    .hero-section {
+        padding: 20px;
+        height: auto;
+    }
+
     .hero-content {
         flex-direction: column;
         text-align: center;
@@ -73,14 +77,26 @@
     .hero-image {
         margin-left: 0;
         margin-bottom: 20px;
-        width: 300px;
+        width: 250px;
     }
 
     .hero-text {
         max-width: 100%;
+        padding: 10px;
     }
 
     .hero-text h1 {
+        font-size: 2em;
         text-align: center;
+    }
+
+    .hero-text .saludo {
+        font-size: 3em;
+        left: 0;
+        transform: rotate(0deg);
+    }
+
+    .hero-text p {
+        font-size: 1.2em;
     }
 }
