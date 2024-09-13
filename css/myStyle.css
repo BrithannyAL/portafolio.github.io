@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=EB Garamond');
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
@@ -38,7 +42,30 @@ h1, h2, h3, p, span, a {
     text-decoration: none;
     font-weight: bold;
     padding: 10px 15px;
-    transition: background-color 0.3s ease;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.nav-list a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: #8c5e9d;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-list a:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+.nav-list a:hover {
+    color: #8c5e9d;
 }
 
 #scrollToTopBtn {
@@ -49,7 +76,7 @@ h1, h2, h3, p, span, a {
     z-index: 99;
     border: none; 
     outline: none; 
-    background-color: #270533; 
+    background-color: #3e0a5d; 
     color: white; 
     cursor: pointer; 
     padding: 15px; 
@@ -75,7 +102,7 @@ h1, h2, h3, p, span, a {
 }
 
 #scrollToTopBtn:hover {
-    background-color: #3e0a5d; 
+    background-color: #631193; 
     transform: scale(1.1); 
 }
 

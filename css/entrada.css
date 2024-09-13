@@ -1,10 +1,9 @@
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
     color: #333;
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
-    padding: 20px;
+    background-color: #8d59a0;
 }
 
 header {
@@ -15,6 +14,18 @@ header {
 h1 {
     color: #5d386a;
     font-size: 2.5em;
+}
+
+h2 {
+    color: #5d386a;
+    margin-top: 30px;
+    text-align: left;
+}
+
+.content-container {
+    background-color: aliceblue;
+    padding: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4)
 }
 
 .author-info {
@@ -41,12 +52,56 @@ h1 {
 
 .content {
     font-size: 1.1em;
+    height: 100%;
 }
 
-h2 {
-    color: #5d386a;
+
+
+.return-button-container {
+    text-align: center;
     margin-top: 30px;
-    text-align: left;
+}
+
+.return-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #5d386a; /* Match the color scheme */
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.return-button:hover {
+    background-color: #3e0a5d; /* Darker background on hover */
+    transform: scale(1.05); /* Slightly larger on hover */
+}
+
+.blog-image-left {
+    float: left;
+    margin: 0 15px 15px 0;
+    max-width: 40%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.blog-image-right {
+    float: right;
+    margin: 0 0 15px 15px;
+    max-width: 40%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 600px) {
+    .blog-image-left,
+    .blog-image-right {
+        float: none;
+        display: block;
+        margin: 15px auto;
+        max-width: 100%;
+    }
 }
 
 @media (max-width: 600px) {

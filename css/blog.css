@@ -101,7 +101,7 @@
 .read-more {
     align-self: flex-start;
     background-color: transparent;
-    border: 2px solid #6b46c1;
+    border: 2px solid #3e0a5d;
     color: #6b46c1;
     padding: 0.5rem 1rem;
     border-radius: 0.25rem;
@@ -111,7 +111,7 @@
 }
 
 .read-more:hover {
-    background-color: #6b46c1;
+    background-color: #3e0a5d;
     color: #fff;
     transform: scale(1.05);
 }
