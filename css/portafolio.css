@@ -76,7 +76,7 @@
 }
 
 
-#my-cv:hover {
+/* #my-cv:hover {
     background-color: #734a7d; 
     transform: scale(1.05);
 }
@@ -84,7 +84,7 @@
 #my-cv:active {
     background-color: #5a365d;
     transform: scale(1);
-}
+} */
 
 /* Medida para celular */
 
